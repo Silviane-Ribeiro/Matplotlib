@@ -14,10 +14,11 @@ plt.show()
 #Desenvolva um gráfico de barras para comparar as quantidades em estoque de diferentes produtos. Utilize dados como produtos = ['Teclado', 'Mouse', 'Monitor', 'Webcam'] e quantidades = [50, 75, 30, 60].
 produtos = ['Teclado', 'Mouse', 'Monitor', 'Webcam']
 quantidades = [50, 75, 30, 60]
-plt.bar(produtos, quantidades)
+plt.bar(produtos, quantidades, color='skyblue', label='Quantidade em Estoque')
 plt.title('Quantidade em Estoque')
 plt.xlabel('Produtos')
 plt.ylabel('Quantidade')
+plt.legend()
 plt.show()
 
 #3. Proporção de Categorias
@@ -26,16 +27,16 @@ categorias = ['Eletrônicos', 'Vestuário', 'Alimentos']
 valores = [15000, 8000, 5000]
 plt.pie(valores, labels=categorias, autopct='%1.1f%%')
 plt.title('Proporção de Valores')
-plt.xlabel('Categorias')
-plt.ylabel('Valores')
+plt.legend()
 plt.show()
 
 4. #Preço vs. Quantidade
 #Faça um gráfico de dispersão para analisar a relação entre o preço unitário e a quantidade em estoque de diversos itens. Dados de exemplo: precos = [50, 120, 300, 80, 20] e estoque = [80, 25, 10, 70, 150].
 precos = [50, 120, 300, 80, 20]
 estoque = [80, 25, 10, 70, 150]
-plt.scatter(precos, estoque)
+plt.scatter(precos, estoque, label="Preço x Estoque")
 plt.title('Preço vs. Quantidade em Estoque')
-plt.xlabel('Preço Unitário')
+plt.xlabel('Preço Unitário (R$)')
 plt.ylabel('Quantidade em Estoque')
+plt.legend()
 plt.show()
