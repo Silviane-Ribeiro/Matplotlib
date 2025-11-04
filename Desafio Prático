@@ -1,0 +1,41 @@
+import matplotlib.pyplot as plt
+#1.Tendência de Estoque Diário
+#Crie um gráfico de linha mostrando a evolução da quantidade de um produto específico ao longo de uma semana. Imagine dados como dias = [1, 2, 3, 4, 5, 6, 7] e estoque = [100, 95, 110, 105, 120, 115, 130].
+dias = [1, 2, 3, 4, 5, 6, 7, ]
+estoque = [100, 95, 110, 105, 120, 115, 130]
+plt.plot(dias, estoque, label="estoque", color="orange")
+plt.title("Movimentações de Estoque")
+plt.xlabel("Dias")
+plt.ylabel("Quantidade")
+plt.legend()
+plt.show()
+
+#2. Comparação de Produtos
+#Desenvolva um gráfico de barras para comparar as quantidades em estoque de diferentes produtos. Utilize dados como produtos = ['Teclado', 'Mouse', 'Monitor', 'Webcam'] e quantidades = [50, 75, 30, 60].
+produtos = ['Teclado', 'Mouse', 'Monitor', 'Webcam']
+quantidades = [50, 75, 30, 60]
+plt.bar(produtos, quantidades)
+plt.title('Quantidade em Estoque')
+plt.xlabel('Produtos')
+plt.ylabel('Quantidade')
+plt.show()
+
+#3. Proporção de Categorias
+#Gere um gráfico de pizza para visualizar a proporção do valor total de estoque por categoria de produto. Considere categorias = ['Eletrônicos', 'Vestuário', 'Alimentos'] e valores = [15000, 8000, 5000].
+categorias = ['Eletrônicos', 'Vestuário', 'Alimentos']
+valores = [15000, 8000, 5000]
+plt.pie(valores, labels=categorias, autopct='%1.1f%%')
+plt.title('Proporção de Valores')
+plt.xlabel('Categorias')
+plt.ylabel('Valores')
+plt.show()
+
+4. #Preço vs. Quantidade
+#Faça um gráfico de dispersão para analisar a relação entre o preço unitário e a quantidade em estoque de diversos itens. Dados de exemplo: precos = [50, 120, 300, 80, 20] e estoque = [80, 25, 10, 70, 150].
+precos = [50, 120, 300, 80, 20]
+estoque = [80, 25, 10, 70, 150]
+plt.scatter(precos, estoque)
+plt.title('Preço vs. Quantidade em Estoque')
+plt.xlabel('Preço Unitário')
+plt.ylabel('Quantidade em Estoque')
+plt.show()
